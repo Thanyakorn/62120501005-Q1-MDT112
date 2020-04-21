@@ -1,28 +1,25 @@
-int Buzzer = 8;
-void setup(){
-    
-    pinMode(Buzzer, OUTPUT);
 
-    pinMode(3,OUTPUT);
-    pinMode(4,OUTPUT);
-    pinMode(5,OUTPUT);
-    pinMode(6,OUTPUT);
-    pinMode(7,OUTPUT);
-    pinMode(9,OUTPUT);
-    pinMode(10,OUTPUT);
-    pinMode(11,OUTPUT);
-    pinMode(12,OUTPUT);
-    pinMode(13,OUTPUT);
-    
-    
-    
+void setup(){
+    pinMode(2, OUTPUT);
+    pinMode(3, OUTPUT);
+    pinMode(4, OUTPUT);
+    pinMode(5, OUTPUT);
+    pinMode(6, OUTPUT);
+    pinMode(7, OUTPUT);
+    pinMode(8, OUTPUT);
+    pinMode(9, OUTPUT);
+    pinMode(10, OUTPUT);
+    pinMode(11, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(13, OUTPUT);
 
 }
 void loop(){
-    tone(Buzzer,200,500);
-    delay(250);
-    tone(Buzzer,400,100);
 
+    digitalWrite(2,HIGH);  
+    delay(100);  
+    digitalWrite(2,LOW);
+    
     digitalWrite(3,HIGH);  
     delay(100);  
     digitalWrite(3,LOW);
@@ -43,6 +40,11 @@ void loop(){
     delay(100);
     digitalWrite(7,LOW);
 
+    digitalWrite(8,HIGH);
+    
+    digitalWrite(8,LOW);
+
+    
     digitalWrite(9,HIGH);   
     delay(100);
     digitalWrite(9,LOW);
@@ -64,12 +66,6 @@ void loop(){
     digitalWrite(13,LOW);
 
 
-
-
-    digitalWrite(13,HIGH);  
-    delay(100);  
-    digitalWrite(13,LOW);
-
     digitalWrite(12,HIGH);  
     delay(100);  
     digitalWrite(12,LOW);
@@ -85,6 +81,10 @@ void loop(){
     digitalWrite(9,HIGH);   
     delay(100); 
     digitalWrite(9,LOW);
+
+    digitalWrite(8,HIGH);  
+      
+    digitalWrite(8,LOW);
 
     digitalWrite(7,HIGH);
     delay(100);
@@ -106,8 +106,9 @@ void loop(){
     delay(100);   
     digitalWrite(3,LOW);
 
-    
-
-    
+    digitalWrite(2,HIGH);  
+    delay(100);  
+    digitalWrite(2,LOW);
+  
 
 }
